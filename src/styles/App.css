@@ -1,1 +1,6 @@
-
+table{
+    border-collapse: collapse;
+    text-align: center;
+    border-color: azure;
+    
+}
