@@ -16,6 +16,7 @@ const App = () => {
         .then((data) => {
           setUsers(data.data);
           setLoading(false);
+          console.log(data)
         })
         .catch((error) => {
           console.error("Error fetching data:", error);
