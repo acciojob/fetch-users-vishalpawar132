@@ -2,5 +2,10 @@ table{
     border-collapse: collapse;
     text-align: center;
     border-color: azure;
-    
+}
+
+button{
+    background-color: rgb(49, 94, 170);
+    color: white;
+    border-radius: 5px;
 }
