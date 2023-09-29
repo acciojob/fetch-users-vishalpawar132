@@ -9,3 +9,8 @@ button{
     color: white;
     border-radius: 5px;
 }
+th{
+    background-color: rgb(37, 35, 35);
+    color: white;
+    margin: 5px;
+}
