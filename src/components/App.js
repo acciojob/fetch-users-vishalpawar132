@@ -6,7 +6,7 @@ import './../styles/App.css';
 const App = () => {
 
   const [users, setUsers] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const fetchUserList = () => {
       setLoading(true);
@@ -26,16 +26,17 @@ const App = () => {
 
 
   return (
-    <div>
-        <button className="btn" onClick={fetchUserList}>Get User Lis</button>
-
+    <div className="list">
+        <div className="btn-BW"> 
+        <h2>Blue Whales</h2>
+        <button className="btn" onClick={fetchUserList}>Get User List</button>
+        </div>
         {loading ? (
       <p>No data found to display</p>
     ) : (
-      <table border="1">
+      <table >
         <thead>
           <tr>
-            <th>ID</th>
             <th>First Name</th>
             <th>Last Name</th>
             <th>Email</th>
@@ -45,7 +46,6 @@ const App = () => {
         <tbody>
           {users.map((user) => (
             <tr key={user.id}>
-              <td>{user.id}</td>
               <td>{user.first_name}</td>
               <td>{user.last_name}</td>
               <td>{user.email}</td>
@@ -57,6 +57,7 @@ const App = () => {
         </tbody>
       </table>
     )}
+
 
 
     </div>

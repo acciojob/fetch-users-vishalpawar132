@@ -1,17 +1,43 @@
+
+/* #root{
+    text-align: center;
+} */
+
+.list{
+    width: 482px;
+    text-align: center;
+}
+
 table{
     border-collapse: collapse;
     text-align: center;
     border: none;
-    background-color: rgb(246, 245, 245);
+    
+}
+th,td{
+    text-align: center;
 }
 
 button{
     background-color: rgb(49, 94, 170);
     color: white;
     border-radius: 5px;
+    width: 150px;
+    height: 30px;
 }
 th{
-    background-color: rgb(37, 35, 35);
+    background-color: rgb(48, 48, 48);
     color: white;
-    margin: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+}
+.btn-BW{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+p{
+    font-weight: bold;
 }
