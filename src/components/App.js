@@ -11,6 +11,10 @@ const App = () => {
   const fetchUserList = () => {
       setLoading(true);
   
+      const length = users.length;
+
+
+
       fetch("https://reqres.in/api/users")
         .then((response) => response.json())
         .then((data) => {
@@ -33,7 +37,7 @@ const App = () => {
         </div>
         {loading ? (
       <p>No data found to display.</p>
-    ) : (
+    ) ||( length == 0 ): (
       <table >
         <thead>
           <tr>
