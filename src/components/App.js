@@ -32,7 +32,7 @@ const App = () => {
         <button className="btn" onClick={fetchUserList}>Get User List</button>
         </div>
         {loading ? (
-      <p>No data found to display</p>
+      <p>No data found to display.</p>
     ) : (
       <table >
         <thead>
